@@ -6,7 +6,7 @@ let high, low, unitText;
 const img = document.querySelector('img');
 const text = document.getElementById('h2Text');
 const btn = document.getElementById('btn')
-// btn.addEventListener('click', loadJson)
+btn.addEventListener('click', loadJson)
 const unitBtn = document.getElementById('units')
 unitBtn.addEventListener('click', toggleUnits)
 
@@ -18,9 +18,9 @@ function toggleUnits() {
 }
 
 async function loadJson() {
-    // const city = document.getElementById('city').value
-    // const state = document.getElementById('state').value
-    // const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + state + '&APPID=a9fec7b30dcd9fdba9ec7e45820f9cad';
+    const city = document.getElementById('city').value
+    const state = document.getElementById('state').value
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + state + '&APPID=a9fec7b30dcd9fdba9ec7e45820f9cad';
     try {
 
     //     const weatherResponse = await fetch(url);
