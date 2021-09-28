@@ -21,6 +21,7 @@ async function loadJson() {
     const state = document.getElementById('state').value
     const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + state + '&APPID=a9fec7b30dcd9fdba9ec7e45820f9cad';
     try {
+        console.log('this works...')
 
         const weatherResponse = await fetch(url);
         const weatherData = await weatherResponse.json();
