@@ -27,7 +27,7 @@ async function loadJson() {
 
         console.log('Portland, Oregon hard coded')
         text.innerHTML = 'Portland, Oregon hard coded'
-        // const weatherResponse = await fetch(url, { mode: 'cors' });
+        const weatherResponse = await fetch(url, { mode: 'cors' });
         // const weatherData = await weatherResponse.json();
 
         // if (unit == 'F') {
