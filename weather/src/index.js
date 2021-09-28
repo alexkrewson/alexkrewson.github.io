@@ -25,8 +25,8 @@ async function loadJson() {
 
     try {
 
-        const weatherResponse = await fetch(url, { mode: 'cors' });
         console.log('Portland, Oregon hard coded')
+        const weatherResponse = await fetch(url, { mode: 'cors' });
         const weatherData = await weatherResponse.json();
 
         if (unit == 'F') {
