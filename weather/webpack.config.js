@@ -1,9 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    // plugins: [
-    //     new LiveReloadPlugin(options)
-    // ],
     mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
@@ -37,10 +34,3 @@ module.exports = {
         ],
     },
 };
-
-// var LiveReloadPlugin = require('webpack-livereload-plugin');
-// mix.webpackConfig({
-//     plugins: [
-//         new LiveReloadPlugin()
-//     ]
-// });
