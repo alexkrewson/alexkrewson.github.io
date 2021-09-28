@@ -1,4 +1,4 @@
-// import "./sassystyle.scss";
+import "./sassystyle.scss";
 
 let unit = 'F';
 let high, low, unitText;
