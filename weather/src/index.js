@@ -22,7 +22,7 @@ async function loadJson() {
     const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + state + '&APPID=a9fec7b30dcd9fdba9ec7e45820f9cad';
     try {
 
-        const weatherResponse = await fetch(url, { mode: 'cors' });
+        const weatherResponse = await fetch(url);
         const weatherData = await weatherResponse.json();
 
         if (unit == 'F') {
