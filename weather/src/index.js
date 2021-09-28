@@ -25,27 +25,27 @@ async function loadJson() {
 
     try {
 
-        console.log('Portland, Oregon hard coded')
-        text.innerHTML = 'Portland, Oregon hard coded'
+        // console.log('Portland, Oregon hard coded')
+        // text.innerHTML = 'Portland, Oregon hard coded'
         const weatherResponse = await fetch(url, { mode: 'cors' });
-        // const weatherData = await weatherResponse.json();
+        const weatherData = await weatherResponse.json();
 
-        // if (unit == 'F') {
-        //     high = Math.round(weatherData.main.temp_max * 9 / 5 - 459.67);
-        //     low = Math.round(weatherData.main.temp_min * 9 / 5 - 459.67);
-        //     unitText = ' &deg;F'
-        // } else {
-        //     high = Math.round(weatherData.main.temp_max - 273.15);
-        //     low = Math.round(weatherData.main.temp_min - 273.15);
-        //     unitText = ' &deg;C'
-        // }
-        // text.innerHTML = weatherData.weather[0].description + ', high of ' + high + unitText + ', low of ' + low + unitText;
+        if (unit == 'F') {
+            high = Math.round(weatherData.main.temp_max * 9 / 5 - 459.67);
+            low = Math.round(weatherData.main.temp_min * 9 / 5 - 459.67);
+            unitText = ' &deg;F'
+        } else {
+            high = Math.round(weatherData.main.temp_max - 273.15);
+            low = Math.round(weatherData.main.temp_min - 273.15);
+            unitText = ' &deg;C'
+        }
+        text.innerHTML = weatherData.weather[0].description + ', high of ' + high + unitText + ', low of ' + low + unitText;
 
-        // const weatherText = weatherData.weather[0].main;
-        // const catResponse = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=ACl5wuZRck8a8B3i0G4xaYyo9nEUp2N8&s=cats', { mode: 'cors' });
-        // const catData = await catResponse.json();
+        const weatherText = weatherData.weather[0].main;
+        const catResponse = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=ACl5wuZRck8a8B3i0G4xaYyo9nEUp2N8&s=cats', { mode: 'cors' });
+        const catData = await catResponse.json();
 
-        // img.src = catData.data.images.original.url;
+        img.src = catData.data.images.original.url;
 
     } catch (err) {
         console.log('error error error')
