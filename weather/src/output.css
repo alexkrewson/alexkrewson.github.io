@@ -1,0 +1,28 @@
+* {
+  margin: 0 0 0 0;
+  color: #181515;
+  background-color: cornflowerblue; }
+
+button {
+  margin-bottom: 20px; }
+
+input {
+  width: 100px;
+  margin-top: 20px;
+  background-color: honeydew; }
+
+label {
+  margin-bottom: 20px; }
+
+#container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#h2Text {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=output.css.map */
