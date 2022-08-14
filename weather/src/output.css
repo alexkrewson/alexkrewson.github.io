@@ -1,7 +1,7 @@
 * {
   margin: 0 0 0 0;
   color: #181515;
-  background-color: cornflowerblue; }
+  background-color: red; }
 
 button {
   margin-bottom: 20px; }
@@ -9,7 +9,7 @@ button {
 input {
   width: 100px;
   margin-top: 20px;
-  background-color: honeydew; }
+  background-color: yellow; }
 
 label {
   margin-bottom: 20px; }
